@@ -1,67 +1,113 @@
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Rubik', sans-serif;
+    background-color: #f9f9f9;
+    color: #fff;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right top, #e0e9ff, #f4ebfe);
 }
+
+.vector-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('picture.jpg'); 
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px); 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    
+}
+
 header {
-    background-color: #b19cd9;
+    border-radius: 0%;
+    background-color: #6b48ff;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    background-color: #9984f7;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 nav {
-    background-color: #b19cd9;
-    text-align: center;
-    padding: 10px 0;
+    position: relative; 
 }
-nav a {
-    color: #fff;
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #6b48ff; 
     text-decoration: none;
-    margin: 0 20px;
-    cursor: pointer;
+    font-size: 1.2em;
     transition: all 0.3s ease-in-out;
 }
-nav a:hover {
-    color: #6b48ff;
+
+nav ul li a:hover {
+    color: #0000ff; 
+    text-decoration: underline; 
 }
+
 section {
-    padding: 40px;
-    background-color: #fff;
-    margin: 20px auto;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    padding: 40px 0;
 }
+
 h2 {
     color: #6b48ff;
-    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
+
 p {
-    color: #555;
     line-height: 1.6;
-    text-align: center;
+    color: #fff;
 }
+
 footer {
-    background-color: #b19cd9;
+    background-color: #6b48ff;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
 }
-footer p {
-    margin: 0;
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
 }
-@media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    nav a {
-        margin: 10px;
-    }
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list li a i {
+    margin-right: 10px;
+    font-size: 1.2em;
 }

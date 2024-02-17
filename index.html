@@ -3,48 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.96.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="leorasaharia.jpg" type="image/x-icon">
+    <link rel="icon" href="leorasaharia.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css"> 
     <title>Leora Saharia - Portfolio</title>
-    <link rel = "stylesheet" href = "styles.css">      
-
 </head>
 
 <body>
     <header>
-        <h1>Leora Saharia</h1>
+        <div class="vector-bg">
+            </div>
+        <div class="container">
+            <h1>Leora Saharia</h1>
+            <nav>
+                <ul>
+                    <li><a onclick="scrollToSection('about')">About</a></li>
+                    <li><a onclick="scrollToSection('experience')">Experience</a></li>
+                    <li><a onclick="scrollToSection('interests')">Interests</a></li>
+                    <li><a onclick="scrollToSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a onclick="scrollToSection('about')">About</a>
-        <a onclick="scrollToSection('experience')">Experience</a>
-        <a onclick="scrollToSection('business')">Interests</a>
-        <a onclick="scrollToSection('contact')">Contact</a>
-    </nav>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About</h2>
+                <p>I'm a first year undergraduate student at the National Institute of Technology Raipur, majoring in Biomedical Engineering. I completed my schooling at Delhi Public School Bhilai. Hailing from Bhilai, Chhattisgarh, my roots trace back to the picturesque city of Guwahati, Assam.</p>
+            </div>
+        </section>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>I'm a first year undergraduate student at the National Institute of Technology Raipur, majoring in Biomedical Engineering. I completed my schooling at Delhi Public School Bhilai. Hailing from Bhilai, Chhattisgarh, my roots trace back to the picturesque city of Guwahati, Assam.</p>
-    </section>
+        <section id="experience">
+            <div class="container">
+                <h2>Experience</h2>
+                <p>I passionately engage in coding contests and have spearheaded projects, notably contributing to the development of a cutting-edge "Healthbot" website. My expertise lies in frontend development, coupled with proficiency in languages like C, C++, and Python. Alongside, I'm fascinated with pursuing being a full-stack developer.</p>
+            </div>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>I passionately engage in coding contests and have spearheaded projects, notably contributing to the development of a cutting-edge "Healthbot" website. My expertise lies in frontend development, coupled with proficiency in languages like C, C++, and Python. Alongside, I'm fascinated with pursuing being a full-stack developer.</p>
-    </section>
+        <section id="interests">
+            <div class="container">
+                <h2>Interests</h2>
+                <p>Other than coding, I'm interested in music making and producing. I have a YouTube channel where I sing in my free time. I also enjoy writing journals and am currently writing a novella exploring love in all its forms.</p>
+            </div>
+        </section>
 
-    <section id="business">
-        <h2>Interests</h2>
-        <p>Other than coding, I'm interested in music making and producing. I have a YouTube channel where I sing in my free time. I also enjoy writing journals and am currently writing a novella exploring love in all its forms.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:sahariamukul999@gmail.com">sahariamukul999@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/leora-saharia" target="_blank">Leora Saharia</a></p>
-        <p>GitHub: <a href="https://github.com/Leorasaharia" target="_blank">Leorasaharia</a></p>
-        <p>Youtube: <a href="https://www.youtube.com/@LeoraSaharia" target="_blank">Leora Saharia</a></p>
-    </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <ul class="contact-list">
+                    <li><a href="mailto:sahariamukul999@gmail.com"><i class="far fa-envelope"></i> sahariamukul999@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/leora-saharia" target="_blank"><i class="fab fa-linkedin"></i> Leora Saharia</a></li>
+                    <li><a href="https://github.com/Leorasaharia" target="_blank"><i class="fab fa-github"></i> Leorasaharia</a></li>
+                    <li><a href="https://www.youtube.com/@LeoraSaharia" target="_blank"><i class="fab fa-youtube"></i> Leora Saharia</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Leora Saharia - Portfolio</p>
+        <div class="container">
+            <p>&copy; 2024 Leora Saharia - Portfolio</p>
+        </div>
     </footer>
 
     <script>
