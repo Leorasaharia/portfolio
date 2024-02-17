@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leora Saharia - Portfolio</title>
+    <link rel = "stylesheet" href = "styles.css">      
+
+</head>
+
+<body>
+    <header>
+        <h1>Leora Saharia</h1>
+    </header>
+
+    <nav>
+        <a onclick="scrollToSection('about')">About</a>
+        <a onclick="scrollToSection('experience')">Experience</a>
+        <a onclick="scrollToSection('business')">Interests</a>
+        <a onclick="scrollToSection('contact')">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>I'm a first-year undergraduate student at the National Institute of Technology Raipur, majoring in Biomedical Engineering. I completed my schooling at Delhi Public School Bhilai. Hailing from Bhilai, Chhattisgarh, my roots trace back to the picturesque city of Guwahati, Assam.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>I passionately engage in coding contests and have spearheaded projects, notably contributing to the development of a cutting-edge "Healthbot" website. My expertise lies in frontend development, coupled with proficiency in languages like C, C++, and Python. Alongside, I'm fascinated with pursuing being a full-stack developer.</p>
+    </section>
+
+    <section id="business">
+        <h2>Interests</h2>
+        <p>Other than coding, I'm interested in music making and producing. I have a YouTube channel where I sing in my free time. I also enjoy writing journals and am currently writing a novella exploring love in all its forms.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sahariamukul999@gmail.com">sahariamukul999@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/leora-saharia" target="_blank">Leora Saharia</a></p>
+        <p>GitHub: <a href="https://github.com/Leorasaharia" target="_blank">Leorasaharia</a></p>
+        <p>Youtube: <a href="https://www.youtube.com/@LeoraSaharia" target="_blank">Leora Saharia</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Leora Saharia - Portfolio</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
