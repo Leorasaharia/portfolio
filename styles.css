@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Rubik', sans-serif;
     background-color: #f9f9f9;
@@ -34,13 +35,55 @@ header {
     padding: 20px 0;
     background-color: #9984f7;
 }
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+header h1 span:hover {
+    color:  #b4a7efa8; 
+    
+}
+
+header h1 span:nth-child(2) {
+    color: #664cd874; 
+    
+}
+header h1 span:hover {
+    text-shadow: 0 0 10px #1e1545, 0 0 20px #0a0717, 0 0 30px #100c24; /* Adjust the glow effect as needed */
+}
+
+.content h1 {
+    
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    font-feature-settings: "blwf";
+    font-optical-sizing: 10em;
+
+}
 
 header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 2em;
+    backface-visibility: hidden;
+    color: #c8c8f8;
+    font-feature-settings: "abvs";
+    font-variant: inherit;
+    font-stretch: ultra-condensed;
+    font-display: big;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;margin-bottom: 0px;
+    transition: width 2s, height 2s, transform 2s;
 }
 nav {
     position: relative; 
+    text-transform: inherit;
 }
 
 nav ul {
@@ -65,8 +108,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #0000ff; 
-    text-decoration: underline; 
+    color: #8383f9; 
+    text-decoration: underline;
+    text-transform: uppercase; 
 }
 
 section {
@@ -74,9 +118,15 @@ section {
 }
 
 h2 {
-    color: #6b48ff;
+    color: #d3d0fa;
     font-size: 2em;
     margin-bottom: 20px;
+}
+h2:hover {
+    color: #8c8cff6b; 
+    text-shadow: 0 0 10px #1e1545, 0 0 20px #0a0717, 0 0 30px #100c24; /* Adjust the glow effect as needed */
+    text-transform: unset;
+    transition: width 2s, height 2s, transform 2s;
 }
 
 p {
@@ -94,6 +144,7 @@ footer {
 .contact-list {
     list-style-type: none;
     padding: 0;
+    text-shadow: #9984f7;
 }
 
 .contact-list li {
@@ -105,6 +156,8 @@ footer {
     text-decoration: none;
     display: flex;
     align-items: center;
+    text-decoration: rgb(242, 204, 223);
+
 }
 
 .contact-list li a i {
