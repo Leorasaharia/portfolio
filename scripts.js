@@ -1,41 +1,27 @@
-/*gsap.registerPlugin(ScrollTrigger);
-gsap.utils.toArray(".revealUp").forEach(function (elem) {
-  ScrollTrigger.create({
-    trigger: elem,
-    start: "top 80%",
-    end: "bottom 20%",
-    markers: true,
-    onEnter: function () {
-      gsap.fromTo(
-        elem,
-        { y: 100, autoAlpha: 0 },
-        {
-          duration: 1.25,
-          y: 0,
-          autoAlpha: 1,
-          ease: "back",
-          overwrite: "auto"
-        }
-      );
-    },
-    onLeave: function () {
-      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
-    },
-    onEnterBack: function () {
-      gsap.fromTo(
-        elem,
-        { y: -100, autoAlpha: 0 },
-        {
-          duration: 1.25,
-          y: 0,
-          autoAlpha: 1,
-          ease: "back",
-          overwrite: "auto"
-        }
-      );
-    },
-    onLeaveBack: function () {
-      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+/*
+const dynamicText = document.querySelector("h1 span");
+const words = ["Leora Saharia", "A Web Developer", "A Youtuber"];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typeEffect = () => {
+    const currentWord = words[wordIndex];
+    const currentChar = currentWord.substring(0, charIndex);
+    dynamicText.textContent = currentChar;
+    dynamicText.classList.add("stop-blinking");
+    if (!isDeleting && charIndex < currentWord.length) {
+        charIndex++;
+        setTimeout(typeEffect, 200);
+    } else if (isDeleting && charIndex > 0) {
+      
+        charIndex--;
+        setTimeout(typeEffect, 100);
+    } else {
+        
+        isDeleting = !isDeleting;
+        dynamicText.classList.remove("stop-blinking");
+        wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
+        setTimeout(typeEffect, 1200);
     }
-  });
-}); */
+}
+typeEffect();*/
