@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body {
     font-family: 'Rubik', sans-serif;
     background-color: #9fc6ef;
     color: #fff;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* To prevent horizontal scrollbar */
 }
 
 .vector-bg {
@@ -17,6 +19,7 @@ body {
     background-position: center;
     background-size: cover;
     filter: blur(5px); 
+    z-index: -1; 
 }
 
 .container {
@@ -25,7 +28,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
-    
+    z-index: -1; 
 }
 
 header {
@@ -34,14 +37,16 @@ header {
     color: #fff;
     padding: 20px 0;
     background-color: #9984f7;
+    position: relative; 
+    z-index: 1; 
 }
 
 .hero {
     position: fixed;
     top: 0;
     left: 0;
-
 }
+
 h1 {
     color: #b4b8ff;
     font-size: 2rem;
@@ -49,20 +54,25 @@ h1 {
 }
 
 header h1 {
-    
     font-size: 75px;
     font-weight: 900;
     line-height: 90px;
     text-transform: inherit;
-    width: 70%;margin-bottom: 0px;
-    
+    width: 70%;
+    margin-bottom: 0px;
 }
+
 h1 span:nth-child(2) {
     color: #8e77f374; 
-    
 }
-h1 span:hover {
-    text-shadow: 0 0 1px #c5bcec, 0 0 1px #000000, 0 0 10px #100c24;
+
+h1 span.stop-blinking {
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
 }
 
 nav {
@@ -106,6 +116,7 @@ h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
+
 h2:hover {
     color: #8c8cff6b; 
     text-shadow: 0 0 10px #1e1545, 0 0 20px #0a0717, 0 0 30px #100c24; 
@@ -141,10 +152,26 @@ footer {
     display: flex;
     align-items: center;
     text-decoration: rgb(242, 204, 223);
-
 }
 
 .contact-list li a i {
     margin-right: 10px;
     font-size: 1.2em;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5; 
+    background: linear-gradient(90deg, #6b48ff, #9984f7, #b4b8ff, #9984f7, #6b48ff);
+    animation: streaks 20s linear infinite;
+}
+
+@keyframes streaks {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
 }
