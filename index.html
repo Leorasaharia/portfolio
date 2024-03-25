@@ -2,74 +2,317 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.96.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="shortcut icon" href="leorasaharia.jpg" type="image/x-icon">
-    <link rel="icon" href="leorasaharia.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css"> 
-    <title>Leora Saharia - Portfolio</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <body>
-        <div class="hero"></div>
-        <header>
-            <div class="vector-bg"></div>
-            <div class="container">
-                <h1>Hello, I’m <br><span>Leora Saharia</span></h1>
-                <nav>
-                    <ul>
-                        <li><a onclick="scrollToSection('about')">About</a></li>
-                        <li><a onclick="scrollToSection('experience')">Experience</a></li>
-                        <li><a onclick="scrollToSection('interests')">Interests</a></li>
-                        <li><a onclick="scrollToSection('contact')">Contact</a></li>
-                    </ul>
-                   
-                </nav>
+<body class="main-content" >
+    <div id="bg">
+        <canvas></canvas>
+        <canvas></canvas>
+        <canvas></canvas>
+      </div>
+      <div class="cursor"></div>
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">            
             </div>
-        </header>
-
+            <div class="right-header">
+                <h1 class="name">  
+                    Hi, I'm <span>Leora Saharia</span>
+                </h1>
+                <p>
+                    I'm Leora, a web developer and I like to create beautiful websites! 
+                </p>
+                <div class="btn-con">
+                    <a href="LeoraSaharia_Resume.pdf" class="main-btn" download="LeoraSaharia_Resume.pdf">
+                        <span class="btn-text">Download Resume</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
-        <section id="about">
-            <div class="container">
-                <h2><span>About</span></h2>
-                <p>I'm a first year undergraduate student at the National Institute of Technology Raipur, majoring in Biomedical Engineering. I completed my schooling at Delhi Public School Bhilai. Hailing from Bhilai, Chhattisgarh, my roots trace back to the picturesque city of Guwahati, Assam.</p>
+        <section class="bgimage" id="home">
+            <div class="container-fluid"></div>
             </div>
         </section>
-
-        <section id="experience">
-            <div class="container">
-                <h2><span>Experience</span></h2>
-                <p>I passionately engage in coding contests and have spearheaded projects, notably contributing to the development of a cutting-edge "Healthbot" website. My expertise lies in frontend development, coupled with proficiency in languages like C, C++, and Python. Alongside, I'm fascinated with pursuing being a full-stack developer.</p>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">ABOUT</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About me</h4>
+                    <p>
+                        I'm a first year undergraduate student at the National Institute of Technology Raipur, majoring in Biomedical Engineering. I completed my schooling at Delhi Public School Bhilai. Hailing from Bhilai, Chhattisgarh, my roots trace back to the picturesque city of Guwahati, Assam.
+                    </p>
+                    <div class="btn-con">
+                        <a href="LeoraSaharia_Resume.pdf" class="main-btn">
+                            <span class="btn-text">Download Resume</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">2</p>
+                            <p class="small-text">Projects <br/> Completed</p>
+                            <p>
+                                <ul>
+                                    <li><b>Spin-Wheel Game</b><br>It's a a game where you'll receive fortune telling based on the number you land on when spinning the wheel. You can see what destiny has in store for you! </li>
+                                    <br>
+                                    <li> <b>Calender Planner</b><br>It's a calender planning website where you can mark dates on the calender, plan your daily or monthly tasks with the journal entry and voice memos!</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4><span class="bg-text">MY SKILLS</span></h2>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">html</p>
+                        <div class="progress-con">
+                            <p class="prog-text">94%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">css</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">ReactJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">55%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">NodeJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">67%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Python</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
-
-        <section id="interests">
-            <div class="container">
-                <h2><span>Interests</span></h2>
-                <p>Other than coding, I'm interested in music making and producing. I have a YouTube channel where I sing in my free time. I also enjoy writing journals and am currently writing a novella exploring love in all its forms.</p>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Projects</span><span class="bg-text">PROJECTS</span></h2>
             </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="image1.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href=" https://github.com/Leorasaharia/plannerApp" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://github.com/Leorasaharia/plannerApp" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="image.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/Leorasaharia/spinwheel" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://github.com/Leorasaharia/spinwheel" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
         </section>
+        <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Interests</span><span class="bg-text">INTERESTS</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="pic.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                               My hobbies and Interests!
+                            </h4>
+                            <p>
+                                Other than coding, I'm interested in music making and producing. I have a YouTube channel where I sing in leisure time. I also enjoy writing journals and am currently writing a novella which is about exploring the intricacies love in all its forms.
+                                <div class="right-contact">
+                                    <div class="blogs">
+                                        <div class="blog">
+                                            <iframe width="250" height="315" src="https://www.youtube.com/embed/txyMty7P_5c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="blog">
+                                            <iframe width="250" height="315" src="https://www.youtube.com/embed/KuLf_AG5aCU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                            </p>
+                    </div>
+        </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">CONTACT</span></h2>
+                </div>
+                <div class="contact-content-con">
+            
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p>
+                            Feel free to reach out to me through the provided contact form or via email for any inquiries or collaboration opportunities!
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location<hr></span>
+                                </div>
+                                <p>
+                                   Raipur, India
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email<hr></span>
+                                </div>
+                                <p>
+                                    <span>sahariamukul999@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education<hr></span>
+                                </div>
+                                <p>
+                                    <span>National Institute of Technology Raipur</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages<hr></span>
+                                </div>
+                                <p>
+                                    <span>English, Hindi, Assamese</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="https://www.youtube.com/@LeoraSaharia" target="_blank">
+                                    <i class="fab fa-youtube"></i> </a>
+                                <a href="https://www.linkedin.com/in/leora-saharia-9403681a7/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/Leorasaharia" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="#" class="contact-form" id="contactForm">
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="YOUR NAME" id="name">
+                                <input type="email" required placeholder="YOUR EMAIL" id="email">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="ENTER SUBJECT" id="subject">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="message" id="message" cols="10" rows="6" placeholder="Message Here..." required></textarea>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                            <button type="submit" class="main-btn" id="submitBtn">
+                                <span class="btn-text">Submit</span>
+                                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            </button>
+                        </form>
+                    </div>
 
-        <section id="contact">
-            <div class="container">
-                <h2><span>Contact</span></h2>
-                <ul class="contact-list">
-                    <li><a href="mailto:sahariamukul999@gmail.com"><i class="far fa-envelope"></i> sahariamukul999@gmail.com</a></li>
-                    <li><a href="https://www.linkedin.com/in/leora-saharia-9403681a7/" target="_blank"><i class="fab fa-linkedin"></i> Leora Saharia</a></li>
-                    <li><a href="https://github.com/Leorasaharia" target="_blank"><i class="fab fa-github"></i> Leorasaharia</a></li>
-                    <li><a href="https://www.youtube.com/@LeoraSaharia" target="_blank"><i class="fab fa-youtube"></i> Leora Saharia</a></li>
-                </ul>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Leora Saharia - Portfolio</p>
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
         </div>
-    </footer>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
     <script src="scripts.js"></script>
-    </body>
+</body>
 </html>
