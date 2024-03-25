@@ -39,9 +39,6 @@
     --color-grey-6: #12181b;
   }
   
-  body, .theme-btn, .control {
-    cursor: none; 
-  }
   .cursor {
     width: 40px;
     height: 40px;
