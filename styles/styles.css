@@ -42,7 +42,7 @@
   .cursor {
     width: 40px;
     height: 40px;
-    background: radial-gradient(circle, rgba(110, 127, 209, 0.8) 0%, rgba(255,255,255,0) 70%);
+    background: radial-gradient(circle, rgba(110, 127, 209, 0.8) 0%, rgba(58, 57, 57, 0.811) 70%);
     border-radius: 50%;
     position: absolute;
     z-index: 9999;
